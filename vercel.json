@@ -1,0 +1,22 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "https://your-backend-api-url.com/api/v1",
+    "REACT_APP_NAME": "LinkedIn Clone"
+  },
+  "build": {
+    "env": {
+      "REACT_APP_API_URL": "https://your-backend-api-url.com/api/v1",
+      "REACT_APP_NAME": "LinkedIn Clone"
+    }
+  }
+}
