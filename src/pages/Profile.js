@@ -70,14 +70,6 @@ const Profile = () => {
   };
 
   useEffect(() => {
-    const fetchProfile = async () => {
-      try {
-        // your logic here
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
     fetchProfile();
   }, [id]);
 
